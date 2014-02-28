@@ -1,0 +1,3 @@
+rails g controller static index
+
+rails g controller Users index
