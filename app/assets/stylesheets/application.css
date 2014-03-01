@@ -26,9 +26,11 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#'2889e3, endColorstr='#'2ea3dd, GradientType=0);
 }
 .navbar .brand {
+	transform: skew(30deg,20deg)
   padding: 8px 20px 12px;
   font-size: 30px;
   color: white;
+  text-shadow: none;
 
 }
 .navbar .nav > li > a {
