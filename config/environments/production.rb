@@ -22,7 +22,8 @@ Facebase::Application.configure do
 
   config.active_support.deprecation = :notify
   config.action_mailer.default_url_options = { host: 'sheltered-refuge-1914.herokuapp.com/' }
-
+  config.action_controller.asset_host = 'sheltered-refuge-1914.herokuapp.com'
+  config.action_mailer.asset_host = 'sheltered-refuge-1914.herokuapp.com'
   config.log_formatter = ::Logger::Formatter.new
   config.action_mailer.smtp_settings = {
     port: '587',
