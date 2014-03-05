@@ -1,0 +1,9 @@
+contact.html.erb
+
+<%= form_tag(contact_path) do %>
+
+	<section><%= text_field_tag(:name, '', placeholder: 'name') %></section>
+	<section><%= text_field_tag(:email, '', placeholder: 'email') %></section>
+	<section><%= text_field_tag(:concern, '', placeholder: 'concern here') %></section>
+	<section><%= 	submit_tag("submit", class: 'btn btn-success') %></section>
+<% end %>
