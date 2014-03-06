@@ -5,4 +5,5 @@ Facebase::Application.routes.draw do
   get '/annoying' => 'static#annoying'
   get '/welcome' => 'static#welcome'
   match '/contact' => 'static#contact', via: [:get, :post]
+  match '/newsletter' => 'static#newsletter', via: [:get, :post]
 end

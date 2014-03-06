@@ -1,0 +1,11 @@
+<div class="well span4 offset1">
+
+ <h1>Sign up for weekly newsletter</h1>
+	<%= form_for(@newsletter, url: newsletter_path) do |f|%>
+
+		<section><%= f.text_field(:name, placeholder: 'name') %></section>
+		<section><%= f.text_field(:email, placeholder: 'email') %></section>
+		<section><%= 	f.submit("submit", class: 'btn btn-success') %></section>
+
+		</div>
+	<% end %>

@@ -5,4 +5,9 @@ class AdminMailer < ActionMailer::Base
   	@params = params
   	mail(subject: "next contact form submission")
   end
+  def newsletter_form(params)
+  	@params = params
+  	mail(subject: "new newsletter signup")
+  end
 end
+
