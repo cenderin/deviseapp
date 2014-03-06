@@ -1,9 +1,14 @@
-contact.html.erb
+	<div class="well span4 offset1">
 
-<%= form_tag(contact_path) do %>
+<h1>Contact us</h1>
+<%= form_for(@contact, url: contact_path) do |f|%>
 
-	<section><%= text_field_tag(:name, '', placeholder: 'name') %></section>
-	<section><%= text_field_tag(:email, '', placeholder: 'email') %></section>
-	<section><%= text_field_tag(:concern, '', placeholder: 'concern here') %></section>
-	<section><%= 	submit_tag("submit", class: 'btn btn-success') %></section>
+	<section><%= f.text_field(:name, placeholder: 'name') %></section>
+	<section><%= f.text_field(:email, placeholder: 'email') %></section>
+	<section><%= f.text_area(:concern, placeholder: 'concern here') %></section>
+	<section>  <%= f.check_box "jj" %></section>
+
+	<section><%= 	f.submit("submit", class: 'btn btn-success') %></section>
+
+	</div>
 <% end %>
